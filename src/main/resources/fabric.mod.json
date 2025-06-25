@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "emeraldstuff",
+	"version": "${version}",
+	"name": "EmeraldStuff",
+	"description": "Emerald items like tools and armour",
+	"authors": [
+		"Vretu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Vretu-Dev/EmeraldStuff"
+	},
+	"license": "MIT",
+	"icon": "assets/emeraldstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vretu.emeraldstuff.EmeraldStuff"
+		],
+		"fabric-datagen": [
+			"net.vretu.emeraldstuff.EmeraldStuffDataGenerator"
+		],
+		"client": [
+			"net.vretu.emeraldstuff.EmeraldStuffClient"
+		]
+	},
+	"mixins": [
+		"emeraldstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
